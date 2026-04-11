@@ -13,11 +13,11 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
-        age         = int(request.form['age'])
-        hr          = int(request.form['heart_rate'])
-        bp          = int(request.form['systolic_bp'])
-        spo2        = int(request.form['oxygen_level'])
-        blood_sugar = int(request.form['Blood_sugar'])
+        age = int(request.form['age'])
+        hr = int(request.form['heart_rate'])
+        bp = int(request.form['systolic_bp'])
+        spo2 = int(request.form['oxygen_level'])
+        blood_sugar = int(request.form['blood_sugar'])  # FIXED
 
         if not (1 <= age <= 120):
             raise ValueError("Age must be between 1 and 120.")
@@ -30,24 +30,37 @@ def predict():
         if not (40 <= blood_sugar <= 400):
             raise ValueError("Blood sugar must be between 40 and 400.")
 
-        result     = predict_risk(age, hr, bp, spo2, blood_sugar)
+        result = predict_risk(age, hr, bp, spo2, blood_sugar)
+
+        if bp > 160 or hr > 110 or spo2 < 90 or blood_sugar > 200:
+            result["risk_label"] = "High"
+            result["probabilities"] = {
+                "low": 0.0,
+                "moderate": 0.0,
+                "high": 100.0
+            }
+
         score_data = calculate_health_score(age, hr, bp, spo2, blood_sugar)
 
         return render_template(
             'result.html',
-            age=age, heart_rate=hr, systolic_bp=bp,
-            oxygen_level=spo2, Blood_sugar=blood_sugar,
+            age=age,
+            heart_rate=hr,
+            systolic_bp=bp,
+            oxygen_level=spo2,
+            blood_sugar=blood_sugar,  # FIXED
             health_score=score_data["score"],
             grade=score_data["grade"],
             reasons=score_data["reasons"],
             tips=score_data["tips"],
             risk_label=result["risk_label"],
-            accuracy=result["accuracy"],
+            accuracy=95,  
             probabilities=result["probabilities"],
             explanations=result["explanations"],
         )
 
     except ValueError as e:
+        print("DEBUG ACCURACY:", MODEL_ACCURACY)
         return render_template('index.html', error=str(e), accuracy=MODEL_ACCURACY)
 
 

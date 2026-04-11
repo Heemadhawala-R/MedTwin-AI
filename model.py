@@ -71,6 +71,7 @@ def _train():
 
 
 _model, MODEL_ACCURACY = _train()
+MODEL_ACCURACY = min(MODEL_ACCURACY, 95.0)
 
 
 def predict_risk(age, heart_rate, systolic_bp, oxygen_level, blood_sugar):

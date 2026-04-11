@@ -1,0 +1,164 @@
+# 🧠 MedTwin-AI
+
+> AI-powered patient risk prediction system with real-time analysis and explainable insights
+
+---
+
+## 📸 Preview
+
+### 🧾 Input Interface
+![Input UI](./assets/input.png)
+
+### 📊 Prediction Results
+![Result UI](./assets/result.png)
+
+---
+
+## 🚀 About
+
+MedTwin-AI is a full-stack machine learning web application that predicts a patient’s health risk using key vital parameters such as age, heart rate, blood pressure, oxygen level (SpO₂), and blood sugar.
+
+The system combines a Decision Tree-based machine learning model with a rule-based health scoring engine to provide both predictions and clear explanations.
+
+The goal of this project is to demonstrate how AI can be applied to real-world healthcare scenarios in a simple, interpretable, and user-friendly way.
+
+---
+
+## ✨ Key Features
+
+- 🧠 ML-based risk prediction (Low / Moderate / High)
+- 🌳 Decision Tree model for interpretable decisions
+- 📊 Probability visualization using Chart.js
+- 📈 Health score with grading system
+- 💡 Explainable AI (reasons + feature contributions)
+- ⚡ Real-time predictions via web interface
+- 🎨 Clean and modern UI with animations
+
+---
+
+## 🛠️ Tech Stack
+
+- Language: Python  
+- Backend: Flask  
+- Machine Learning: Scikit-learn (DecisionTreeClassifier)  
+- Libraries: NumPy  
+- Frontend: HTML, CSS, JavaScript  
+- Visualization: Chart.js  
+
+---
+
+## 🧠 System Architecture
+
+User Input  
+↓  
+Flask Backend  
+↓  
+Decision Tree Model  
+↓  
+Health Score Engine  
+↓  
+Result + Visualization UI  
+
+---
+
+## 🧠 How It Works
+
+1. User enters health data via the web interface  
+2. Flask backend receives and processes the input  
+3. Data is passed to the trained Decision Tree model  
+4. Model predicts the risk level along with probabilities  
+5. A rule-based engine calculates the health score and grade  
+6. Results are displayed with visual charts and explanations  
+
+---
+
+## 📂 Project Structure
+
+MedTwin-AI/
+│  
+├── main.py              # Flask backend  
+├── model.py             # ML model (Decision Tree)  
+├── health_score.py      # Scoring + explanation logic  
+├── requirements.txt  
+│  
+├── templates/  
+│   ├── index.html       # Input page  
+│   └── result.html      # Result page  
+
+---
+
+## ▶️ Run Locally
+
+git clone https://github.com/Heemadhawala-R/MedTwin-AI.git  
+cd MedTwin-AI  
+pip install -r requirements.txt  
+python main.py  
+
+Open:  
+http://127.0.0.1:5000
+
+---
+
+## 🧪 Example
+
+Input:
+- Age: 20  
+- Heart Rate: 100  
+- Blood Pressure: 100  
+- SpO₂: 100  
+- Blood Sugar: 100  
+
+Output:
+- Risk Level: Low  
+- Health Score: 90  
+- Grade: Excellent  
+- Insight: Slightly elevated heart rate  
+
+---
+
+## ⚖️ Model Choice
+
+This project uses a Decision Tree Classifier because:
+
+- It is easy to interpret (important in healthcare)  
+- It models non-linear relationships effectively  
+- It provides clear decision logic  
+
+Future improvements may include ensemble models like Random Forest for better generalization.
+
+---
+
+## 🚀 Key Achievements
+
+- Built an end-to-end ML-powered healthcare system  
+- Integrated machine learning with a real-time web application  
+- Implemented explainable AI alongside predictions  
+- Added data visualization using JavaScript (Chart.js)  
+- Designed a clean and responsive user interface  
+
+---
+
+## 🚧 Future Improvements
+
+- Use real-world healthcare datasets  
+- Improve accuracy using ensemble models  
+- Add user authentication and data storage  
+- Integrate wearable health device data  
+- Enhance UI/UX and mobile responsiveness  
+
+---
+
+## ⚠️ Disclaimer
+
+This application is for educational purposes only and should not be used as a substitute for professional medical advice.
+
+---
+
+## 👤 Author
+
+Heemadhawala R  
+https://github.com/Heemadhawala-R  
+
+---
+
+⭐ If you found this project useful, consider giving it a star!
