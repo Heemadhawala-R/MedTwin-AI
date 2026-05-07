@@ -135,15 +135,14 @@ MedTwin-AI/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-│
-├── assets/
-│   ├── System_Home_Page.png
-│   ├── Case1_LowRisk_Input.png
-│   ├── Case1_LowRisk_Output.png
-│   ├── Case2_ModerateRisk_Input.png
-│   ├── Case2_ModerateRisk_Output.png
-│   ├── Case3_HighRisk_Input.png
-│   └── Case3_HighRisk_Output.png
+│---assets/
+├── System_Home_Page.png
+├── low_risk_input.png
+├── low_risk_output.png
+├── moderate_risk_input.png
+├── moderate_risk_output.png
+├── high_risk_input.png
+└── high_risk_output.png
 ```
 
 ---
