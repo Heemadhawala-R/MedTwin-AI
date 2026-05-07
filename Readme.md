@@ -29,7 +29,7 @@ Modern patient input interface for entering health vitals.
 
 ### Output Result
 
-![Low Risk Output](./assets/low_risk__output.png)
+![Low Risk Output](./assets/low_risk_output.png)
 
 ---
 
