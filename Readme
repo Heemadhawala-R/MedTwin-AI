@@ -6,10 +6,6 @@
 
 Real-time health risk analysis using Machine Learning, Explainable AI, and interactive visualizations.
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
-![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge\&logo=flask)
-![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML_Model-orange?style=for-the-badge\&logo=scikit-learn)
-![Chart.js](https://img.shields.io/badge/Chart.js-Visualization-red?style=for-the-badge\&logo=chartdotjs)
 
 </div>
 
@@ -29,11 +25,11 @@ Modern patient input interface for entering health vitals.
 
 ### Input Case
 
-![Low Risk Input](./assets/Case1_LowRisk_Input.png)
+![Low Risk Input](./assets/low_risk_input.png)
 
 ### Output Result
 
-![Low Risk Output](./assets/Case1_LowRisk_Output.png)
+![Low Risk Output](./assets/low_risk__output.png)
 
 ---
 
@@ -41,11 +37,11 @@ Modern patient input interface for entering health vitals.
 
 ### Input Case
 
-![Moderate Risk Input](./assets/Case2_ModerateRisk_Input.png)
+![Moderate Risk Input](./assets/moderate_risk_input.png)
 
 ### Output Result
 
-![Moderate Risk Output](./assets/Case2_ModerateRisk_Output.png)
+![Moderate Risk Output](./assets/moderate_risk_output.png)
 
 ---
 
@@ -53,11 +49,11 @@ Modern patient input interface for entering health vitals.
 
 ### Input Case
 
-![High Risk Input](./assets/Case3_HighRisk_Input.png)
+![High Risk Input](./assets/high_risk_input.png)
 
 ### Output Result
 
-![High Risk Output](./assets/Case3_HighRisk_Output.png)
+![High Risk Output](./assets/high_risk_output.png)
 
 ---
 
