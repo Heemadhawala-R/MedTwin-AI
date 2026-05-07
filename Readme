@@ -1,164 +1,234 @@
 # 🧠 MedTwin-AI
 
-> AI-powered patient risk prediction system with real-time analysis and explainable insights
+<div align="center">
+
+## AI-Powered Patient Risk Prediction System
+
+Real-time health risk analysis using Machine Learning, Explainable AI, and interactive visualizations.
+
+![Python](https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge\&logo=python)
+![Flask](https://img.shields.io/badge/Flask-Web_App-black?style=for-the-badge\&logo=flask)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-ML_Model-orange?style=for-the-badge\&logo=scikit-learn)
+![Chart.js](https://img.shields.io/badge/Chart.js-Visualization-red?style=for-the-badge\&logo=chartdotjs)
+
+</div>
 
 ---
 
-## 📸 Preview
+# 📸 Application Preview
 
-### 🧾 Input Interface
-![Input UI](./assets/input.png)
+## 🏠 Home Page
 
-### 📊 Prediction Results
-![Result UI](./assets/result.png)
+Modern patient input interface for entering health vitals.
 
----
-
-## 🚀 About
-
-MedTwin-AI is a full-stack machine learning web application that predicts a patient’s health risk using key vital parameters such as age, heart rate, blood pressure, oxygen level (SpO₂), and blood sugar.
-
-The system combines a Decision Tree-based machine learning model with a rule-based health scoring engine to provide both predictions and clear explanations.
-
-The goal of this project is to demonstrate how AI can be applied to real-world healthcare scenarios in a simple, interpretable, and user-friendly way.
+![Home Page](./assets/System_Home_Page.png)
 
 ---
 
-## ✨ Key Features
+## 🟢 Low Risk Prediction
 
-- 🧠 ML-based risk prediction (Low / Moderate / High)
-- 🌳 Decision Tree model for interpretable decisions
-- 📊 Probability visualization using Chart.js
-- 📈 Health score with grading system
-- 💡 Explainable AI (reasons + feature contributions)
-- ⚡ Real-time predictions via web interface
-- 🎨 Clean and modern UI with animations
+### Input Case
 
----
+![Low Risk Input](./assets/Case1_LowRisk_Input.png)
 
-## 🛠️ Tech Stack
+### Output Result
 
-- Language: Python  
-- Backend: Flask  
-- Machine Learning: Scikit-learn (DecisionTreeClassifier)  
-- Libraries: NumPy  
-- Frontend: HTML, CSS, JavaScript  
-- Visualization: Chart.js  
+![Low Risk Output](./assets/Case1_LowRisk_Output.png)
 
 ---
 
-## 🧠 System Architecture
+## 🟡 Moderate Risk Prediction
 
-User Input  
-↓  
-Flask Backend  
-↓  
-Decision Tree Model  
-↓  
-Health Score Engine  
-↓  
-Result + Visualization UI  
+### Input Case
+
+![Moderate Risk Input](./assets/Case2_ModerateRisk_Input.png)
+
+### Output Result
+
+![Moderate Risk Output](./assets/Case2_ModerateRisk_Output.png)
 
 ---
 
-## 🧠 How It Works
+## 🔴 High Risk Prediction
 
-1. User enters health data via the web interface  
-2. Flask backend receives and processes the input  
-3. Data is passed to the trained Decision Tree model  
-4. Model predicts the risk level along with probabilities  
-5. A rule-based engine calculates the health score and grade  
-6. Results are displayed with visual charts and explanations  
+### Input Case
+
+![High Risk Input](./assets/Case3_HighRisk_Input.png)
+
+### Output Result
+
+![High Risk Output](./assets/Case3_HighRisk_Output.png)
 
 ---
 
-## 📂 Project Structure
+# 🚀 About The Project
 
+MedTwin-AI is an AI-powered healthcare web application that predicts a patient’s health risk level using important medical vitals such as:
+
+* Age
+* Heart Rate
+* Blood Pressure
+* Oxygen Saturation (SpO₂)
+* Blood Sugar
+
+The system combines:
+
+* 🌳 A Decision Tree Machine Learning model
+* 📊 A health scoring engine
+* 🧠 Explainable AI insights
+* ⚡ Real-time Flask backend processing
+
+The project is designed to demonstrate how Artificial Intelligence can assist healthcare analysis through interpretable and user-friendly systems.
+
+---
+
+# ✨ Features
+
+* 🧠 AI-powered health risk prediction
+* 📊 Probability visualization using Chart.js
+* 🌳 Decision Tree-based ML model
+* 💡 Explainable AI insights and feature contributions
+* 📈 Health score and grading system
+* ⚡ Real-time prediction engine
+* 🎨 Modern responsive UI design
+* 🔍 Interactive patient health analysis
+
+---
+
+# 🛠️ Tech Stack
+
+| Technology          | Usage                     |
+| ------------------- | ------------------------- |
+| Python              | Core Programming Language |
+| Flask               | Backend Web Framework     |
+| Scikit-learn        | Machine Learning          |
+| NumPy               | Numerical Processing      |
+| HTML/CSS/JavaScript | Frontend Development      |
+| Chart.js            | Data Visualization        |
+
+---
+
+# 🧠 System Workflow
+
+```text
+Patient Input
+      ↓
+Flask Backend
+      ↓
+Decision Tree ML Model
+      ↓
+Health Score Engine
+      ↓
+Prediction + Explainable AI
+      ↓
+Interactive Result Dashboard
+```
+
+---
+
+# 📂 Project Structure
+
+```text
 MedTwin-AI/
-│  
-├── main.py              # Flask backend  
-├── model.py             # ML model (Decision Tree)  
-├── health_score.py      # Scoring + explanation logic  
-├── requirements.txt  
-│  
-├── templates/  
-│   ├── index.html       # Input page  
-│   └── result.html      # Result page  
+│
+├── main.py
+├── model.py
+├── health_score.py
+├── requirements.txt
+│
+├── templates/
+│   ├── index.html
+│   └── result.html
+│
+├── assets/
+│   ├── System_Home_Page.png
+│   ├── Case1_LowRisk_Input.png
+│   ├── Case1_LowRisk_Output.png
+│   ├── Case2_ModerateRisk_Input.png
+│   ├── Case2_ModerateRisk_Output.png
+│   ├── Case3_HighRisk_Input.png
+│   └── Case3_HighRisk_Output.png
+```
 
 ---
 
-## ▶️ Run Locally
+# ▶️ Run Locally
 
-git clone https://github.com/Heemadhawala-R/MedTwin-AI.git  
-cd MedTwin-AI  
-pip install -r requirements.txt  
-python main.py  
+```bash
+git clone https://github.com/Heemadhawala-R/MedTwin-AI.git
+cd MedTwin-AI
+pip install -r requirements.txt
+python main.py
+```
 
-Open:  
-http://127.0.0.1:5000
+Open in browser:
 
----
-
-## 🧪 Example
-
-Input:
-- Age: 20  
-- Heart Rate: 100  
-- Blood Pressure: 100  
-- SpO₂: 100  
-- Blood Sugar: 100  
-
-Output:
-- Risk Level: Low  
-- Health Score: 90  
-- Grade: Excellent  
-- Insight: Slightly elevated heart rate  
+```text
+http://127.0.0.1:5001
+```
 
 ---
 
-## ⚖️ Model Choice
+# 🧪 Example Prediction
+
+## Input
+
+* Age: 24
+* Heart Rate: 72
+* Blood Pressure: 115
+* SpO₂: 99
+* Blood Sugar: 90
+
+## Output
+
+* Risk Level: Low
+* Health Score: 95
+* Grade: Excellent
+* Insight: All vitals are within healthy range
+
+---
+
+# 🌳 Why Decision Tree?
 
 This project uses a Decision Tree Classifier because:
 
-- It is easy to interpret (important in healthcare)  
-- It models non-linear relationships effectively  
-- It provides clear decision logic  
+* It is interpretable and easy to understand
+* It performs well on structured healthcare data
+* It provides explainable decision-making
+* It handles non-linear relationships effectively
 
-Future improvements may include ensemble models like Random Forest for better generalization.
-
----
-
-## 🚀 Key Achievements
-
-- Built an end-to-end ML-powered healthcare system  
-- Integrated machine learning with a real-time web application  
-- Implemented explainable AI alongside predictions  
-- Added data visualization using JavaScript (Chart.js)  
-- Designed a clean and responsive user interface  
+Future versions may include Random Forest or XGBoost models for improved performance.
 
 ---
 
-## 🚧 Future Improvements
+# 🚀 Future Improvements
 
-- Use real-world healthcare datasets  
-- Improve accuracy using ensemble models  
-- Add user authentication and data storage  
-- Integrate wearable health device data  
-- Enhance UI/UX and mobile responsiveness  
-
----
-
-## ⚠️ Disclaimer
-
-This application is for educational purposes only and should not be used as a substitute for professional medical advice.
+* Integration with real healthcare datasets
+* User authentication system
+* Cloud database support
+* Wearable health device integration
+* Mobile responsiveness improvements
+* Advanced ML ensemble models
 
 ---
 
-## 👤 Author
+# ⚠️ Disclaimer
 
-Heemadhawala R  
-https://github.com/Heemadhawala-R  
+This project is developed for educational and research purposes only.
+It should not be considered a substitute for professional medical diagnosis or treatment.
 
 ---
+
+# 👨‍💻 Author
+
+## Heemadhawala R
+
+GitHub: [https://github.com/Heemadhawala-R](https://github.com/Heemadhawala-R)
+
+---
+
+<div align="center">
 
 ⭐ If you found this project useful, consider giving it a star!
+
+</div>
