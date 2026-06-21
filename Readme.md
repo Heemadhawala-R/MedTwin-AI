@@ -1,128 +1,93 @@
 # 🧠 MedTwin-AI
 
-<div align="center">
+### AI-Powered Patient Health Risk Prediction System
 
-## AI-Powered Patient Risk Prediction System
+MedTwin-AI is a healthcare-focused machine learning project that helps analyze a patient's health condition based on key medical vitals. The system predicts whether a patient falls into a **Low**, **Moderate**, or **High Risk** category and provides easy-to-understand explanations behind the prediction.
 
-Real-time health risk analysis using Machine Learning, Explainable AI, and interactive visualizations.
+The goal of this project is to demonstrate how Artificial Intelligence and Explainable AI can be used to support healthcare analysis in a simple, transparent, and user-friendly way.
 
-
-</div>
+---
+## 🔗 Live Demo: https://med-twin-ai-w4sv.vercel.app/
 
 ---
 
-# 📸 Application Preview
+## 🚀 What This Project Does
 
-## 🏠 Home Page
-
-Modern patient input interface for entering health vitals.
-
-![Home Page](./assets/System_Home_Page.png)
-
----
-
-## 🟢 Low Risk Prediction
-
-### Input Case
-
-![Low Risk Input](./assets/low_risk_input.png)
-
-### Output Result
-
-![Low Risk Output](./assets/low_risk_output.png)
-
----
-
-## 🟡 Moderate Risk Prediction
-
-### Input Case
-
-![Moderate Risk Input](./assets/moderate_risk_input.png)
-
-### Output Result
-
-![Moderate Risk Output](./assets/moderate_risk_output.png)
-
----
-
-## 🔴 High Risk Prediction
-
-### Input Case
-
-![High Risk Input](./assets/high_risk_input.png)
-
-### Output Result
-
-![High Risk Output](./assets/high_risk_output.png)
-
----
-
-# 🚀 About The Project
-
-MedTwin-AI is an AI-powered healthcare web application that predicts a patient’s health risk level using important medical vitals such as:
+The application collects basic patient health information such as:
 
 * Age
 * Heart Rate
 * Blood Pressure
 * Oxygen Saturation (SpO₂)
-* Blood Sugar
+* Blood Sugar Level
 
-The system combines:
+Using these inputs, the system:
 
-* 🌳 A Decision Tree Machine Learning model
-* 📊 A health scoring engine
-* 🧠 Explainable AI insights
-* ⚡ Real-time Flask backend processing
+✔ Calculates an overall health score
 
-The project is designed to demonstrate how Artificial Intelligence can assist healthcare analysis through interpretable and user-friendly systems.
+✔ Predicts the patient's risk level using Machine Learning
 
----
+✔ Displays prediction probabilities
 
-# ✨ Features
+✔ Explains which health factors contributed most to the result
 
-* 🧠 AI-powered health risk prediction
-* 📊 Probability visualization using Chart.js
-* 🌳 Decision Tree-based ML model
-* 💡 Explainable AI insights and feature contributions
-* 📈 Health score and grading system
-* ⚡ Real-time prediction engine
-* 🎨 Modern responsive UI design
-* 🔍 Interactive patient health analysis
+✔ Presents the analysis through an interactive dashboard
 
 ---
 
-# 🛠️ Tech Stack
+## ✨ Key Features
 
-| Technology          | Usage                     |
-| ------------------- | ------------------------- |
-| Python              | Core Programming Language |
-| Flask               | Backend Web Framework     |
-| Scikit-learn        | Machine Learning          |
-| NumPy               | Numerical Processing      |
-| HTML/CSS/JavaScript | Frontend Development      |
-| Chart.js            | Data Visualization        |
-
----
-
-# 🧠 System Workflow
-
-```text
-Patient Input
-      ↓
-Flask Backend
-      ↓
-Decision Tree ML Model
-      ↓
-Health Score Engine
-      ↓
-Prediction + Explainable AI
-      ↓
-Interactive Result Dashboard
-```
+* Machine Learning based health risk prediction
+* Decision Tree Classifier for interpretable results
+* Health score calculation and grading system
+* Explainable AI insights
+* Probability visualization using charts
+* Real-time prediction processing with Flask
+* Responsive and clean user interface
+* Interactive patient analysis dashboard
 
 ---
 
-# 📂 Project Structure
+## 🛠️ Tech Stack
+
+| Technology          | Purpose                    |
+| ------------------- | -------------------------- |
+| Python              | Core development           |
+| Flask               | Backend framework          |
+| Scikit-Learn        | Machine learning model     |
+| NumPy               | Data processing            |
+| HTML/CSS/JavaScript | Frontend development       |
+| Chart.js            | Interactive visualizations |
+
+---
+
+## 🏗️ How It Works
+
+Patient enters health vitals
+
+⬇️
+
+Flask backend processes the data
+
+⬇️
+
+Decision Tree model evaluates health condition
+
+⬇️
+
+Health Score Engine calculates overall score
+
+⬇️
+
+Prediction probabilities and insights are generated
+
+⬇️
+
+Results are displayed on the dashboard
+
+---
+
+## 📂 Project Structure
 
 ```text
 MedTwin-AI/
@@ -135,95 +100,82 @@ MedTwin-AI/
 ├── templates/
 │   ├── index.html
 │   └── result.html
-│---assets/
-├── System_Home_Page.png
-├── low_risk_input.png
-├── low_risk_output.png
-├── moderate_risk_input.png
-├── moderate_risk_output.png
-├── high_risk_input.png
-└── high_risk_output.png
+│
+├── assets/
+│   ├── System_Home_Page.png
+│   ├── low_risk_input.png
+│   ├── low_risk_output.png
+│   ├── moderate_risk_input.png
+│   ├── moderate_risk_output.png
+│   ├── high_risk_input.png
+│   └── high_risk_output.png
 ```
 
 ---
 
-# ▶️ Run Locally
+## 🧪 Sample Prediction
 
-```bash
-git clone https://github.com/Heemadhawala-R/MedTwin-AI.git
-cd MedTwin-AI
-pip install -r requirements.txt
-python main.py
-```
-
-Open in browser:
-
-```text
-http://127.0.0.1:5001
-```
-
----
-
-# 🧪 Example Prediction
-
-## Input
+### Patient Data
 
 * Age: 24
-* Heart Rate: 72
-* Blood Pressure: 115
-* SpO₂: 99
-* Blood Sugar: 90
+* Heart Rate: 72 bpm
+* Blood Pressure: 115 mmHg
+* SpO₂: 99%
+* Blood Sugar: 90 mg/dL
 
-## Output
+### Prediction Result
 
-* Risk Level: Low
-* Health Score: 95
+* Risk Level: Low Risk
+* Health Score: 95/100
 * Grade: Excellent
-* Insight: All vitals are within healthy range
+* Insight: All vital signs are within a healthy range.
 
 ---
 
-# 🌳 Why Decision Tree?
+## 🌳 Why I Chose a Decision Tree
 
-This project uses a Decision Tree Classifier because:
+For this project, I selected a Decision Tree Classifier because healthcare predictions should be understandable, not just accurate.
 
-* It is interpretable and easy to understand
-* It performs well on structured healthcare data
-* It provides explainable decision-making
-* It handles non-linear relationships effectively
+Decision Trees make it easy to visualize how decisions are made and allow users to understand the reasoning behind a prediction. This aligns well with the goal of building a transparent healthcare application.
 
-Future versions may include Random Forest or XGBoost models for improved performance.
+Some advantages include:
 
----
-
-# 🚀 Future Improvements
-
-* Integration with real healthcare datasets
-* User authentication system
-* Cloud database support
-* Wearable health device integration
-* Mobile responsiveness improvements
-* Advanced ML ensemble models
+* Easy to interpret
+* Handles non-linear relationships
+* Fast prediction speed
+* Suitable for structured healthcare data
 
 ---
 
-# ⚠️ Disclaimer
+## 🔮 Future Enhancements
 
-This project is developed for educational and research purposes only.
-It should not be considered a substitute for professional medical diagnosis or treatment.
+Some improvements planned for future versions include:
+
+* Integration with real-world healthcare datasets
+* User authentication and patient profiles
+* Database integration
+* Wearable device connectivity
+* Mobile-first responsive design
+* Advanced models such as Random Forest and XGBoost
+* Personalized health recommendations
 
 ---
 
-# 👨‍💻 Author
+## ⚠️ Disclaimer
 
-## Heemadhawala R
+This application is created for educational and research purposes only.
 
-GitHub: [https://github.com/Heemadhawala-R](https://github.com/Heemadhawala-R)
+The predictions generated by this system should not be considered medical advice and must not replace consultation with qualified healthcare professionals.
 
 ---
 
-<div align="center">
+## 👨‍💻 Developer
 
-⭐ If you found this project useful, consider giving it a star!
+### Heemadhawala R
 
-</div>
+Passionate about building AI-powered solutions that combine Machine Learning, Data Science, and Web Development to solve real-world problems.
+
+
+---
+
+⭐ If you like this project, feel free to star the repository and share your feedback!
